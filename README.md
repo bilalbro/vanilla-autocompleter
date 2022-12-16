@@ -25,4 +25,13 @@ I thought that it would be very nice if I could just pass in a couple of configu
 
 And thus born `VanillaAutocompleter`.
 
-As I mentioned in the `index.js` file (in the `src` directory), development began on 28th Feb 2022 and ended on 31st Feb 2022. So, building the whole library took roughly about 4 days to complete. Isn't that amazing?
+As I mentioned in the `index.js` file (in the `src` directory), development began on 28th Feb 2022 and ended on 31st Feb 2022. So, building the whole library took roughly about 4 days to complete. _Isn't that amazing?_
+
+## Potential improvements
+
+At the time of this writing (of `README.md`), it has already been almost a year since I've developed this library, and in the meanwhile I can surely say that I've improved considerably as a library author. I feel that there is room for a lot of improvements throughout this codebase.
+
+For instance, I could add TypeScript typings to the library (i.e. an `index.d.ts` file) to allow for better intellisense for its consumers. Moreover, I could even improve the structure of the code at some places to make it a lot more sensible. As a quick example, currently, `index.js` normalizes the provided options itself and if one is not provided, calls on the default from another module and uses that instead. I feel that, ideally, this should be a concern of those individual modules.
+
+
+
