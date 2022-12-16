@@ -24,6 +24,7 @@ ul {
    margin-top: 50px;
    width: 50%;
    max-width: 400px;
+   position: relative;
 }
 
 .ac_input {
@@ -33,7 +34,6 @@ ul {
    padding: 15px;
    font-size: 20px;
    font-family: inherit;
-   border-radius: 10px;
    width: 100%;
    box-sizing: border-box;
 }
@@ -44,8 +44,14 @@ ul {
    font-size: 18px;
    padding: 15px;
    display: none;
-   border-radius: 10px;
-   overflow: hidden;
+   color: grey;
+   cursor: pointer;
+   max-height: 150px;
+   overflow-y: auto;
+   overflow-x: hidden;
+   position: absolute;
+   width: 100%;
+   box-sizing: border-box;
 }
 
 .ac_suggestions--shown {
@@ -58,8 +64,10 @@ ul {
 
 .ac_suggestions li {
    padding: 15px;
+   color: black;
 }
 
-.ac_suggestions li.hl {
+.ac_suggestions li.hl,
+.ac_suggestions li:hover {
    background-color: yellow;
 }
