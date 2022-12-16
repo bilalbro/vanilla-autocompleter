@@ -19,6 +19,9 @@
       new VanillaAutocompleter({
          inputElement: document.querySelector('.ac_input'),
          suggestionsBoxElement: document.querySelector('.ac_suggestions'),
+         highlight: true,
+         allOnEmpty: true,
+         showOnFocus: true,
          data: ['JavaScript', 'Java', 'PHP', 'Rust', 'Ruby', 'Python', 'Swift', 'Scala', 'Kotlin', 'TypeScript'],
       });
    </script>
