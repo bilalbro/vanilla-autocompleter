@@ -1,0 +1,21 @@
+{
+  "name": "vanilla-autocompleter",
+  "version": "1.0.0",
+  "description": "A comprehensive vanilla JS autocompleter.",
+  "scripts": {
+    "build": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "src/index.d.ts",
+  "type": "module",
+  "main": "src/index.js",
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-terser": "^0.1.0",
+    "rollup": "^3.7.3"
+  }
+}
