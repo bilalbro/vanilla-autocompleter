@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vanilla autocompleter</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="../dist/vanilla-autocompleter.js"></script>
+</head>
+<body>
+   <h1><code>VanillaAutocompleter</code></h1>
+   <p>A comprehensive autocompleter written entirely in vanilla JavaScript.</p>
+   <div class="ac">
+      <input type="text" class="ac_input" placeholder="Enter a language name">
+      <div class="ac_suggestions"></div>
+   </div>
+   <script>
+      new VanillaAutocompleter({
+         inputElement: document.querySelector('.ac_input'),
+         suggestionsBoxElement: document.querySelector('.ac_suggestions'),
+         data: ['JavaScript', 'Java'],
+      });
+   </script>
+</body>
+</html>

@@ -15,7 +15,7 @@ import Ordering from './ordering';
 import './additions';
 
 
-class Autocompleter {
+class VanillaAutocompleter {
 
    unselect(selectionId) {
       this.store.removeSelection(selectionId);
@@ -121,8 +121,8 @@ class Autocompleter {
    }
 }
 
-Autocompleter.ascSorting = Ordering.ascSorting;
-Autocompleter.descSorting = Ordering.descSorting;
-Autocompleter.groupByFirstLetter = Ordering.defaultGroup;
+VanillaAutocompleter.ascSorting = Ordering.ascSorting;
+VanillaAutocompleter.descSorting = Ordering.descSorting;
+VanillaAutocompleter.groupByFirstLetter = Ordering.defaultGroup;
 
-export default Autocompleter;
+export default VanillaAutocompleter;

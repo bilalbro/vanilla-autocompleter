@@ -798,9 +798,9 @@
     return false;
   };
 
-  var Autocompleter = /*#__PURE__*/function () {
-    function Autocompleter(options) {
-      _classCallCheck(this, Autocompleter);
+  var VanillaAutocompleter = /*#__PURE__*/function () {
+    function VanillaAutocompleter(options) {
+      _classCallCheck(this, VanillaAutocompleter);
       var normalizedOptions = this.defaults();
       for (var prop in options) {
         normalizedOptions[prop] = options[prop];
@@ -848,7 +848,7 @@
         showSelected: normalizedOptions.showSelected
       });
     }
-    _createClass(Autocompleter, [{
+    _createClass(VanillaAutocompleter, [{
       key: "unselect",
       value: function unselect(selectionId) {
         this.store.removeSelection(selectionId);
@@ -885,12 +885,12 @@
         return options;
       }
     }]);
-    return Autocompleter;
+    return VanillaAutocompleter;
   }();
-  Autocompleter.ascSorting = Ordering.ascSorting;
-  Autocompleter.descSorting = Ordering.descSorting;
-  Autocompleter.groupByFirstLetter = Ordering.defaultGroup;
+  VanillaAutocompleter.ascSorting = Ordering.ascSorting;
+  VanillaAutocompleter.descSorting = Ordering.descSorting;
+  VanillaAutocompleter.groupByFirstLetter = Ordering.defaultGroup;
 
-  return Autocompleter;
+  return VanillaAutocompleter;
 
 }));
